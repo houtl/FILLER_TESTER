@@ -6,7 +6,7 @@
 /*   By: agiulian <agiulian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 16:24:17 by agiulian          #+#    #+#             */
-/*   Updated: 2017/03/23 17:38:29 by agiulian         ###   ########.fr       */
+/*   Updated: 2017/12/25 13:43:47 by thou             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ void	map02p2(t_prm *prm, char player[21])
 			read(prm->fd, prm->buf, 4096);
 			if (strstr(prm->buf, player) && !strstr(prm->buf, "Segfault"))
 				score++;
+			printf("等待。。。");
 			j++;
 		}
 		print_result(prm->player_lst[i], player, prm->nb2, score);
