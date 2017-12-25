@@ -45,3 +45,4 @@ EOF
 rm -rf ./resources/players/"$PLAYER.filler"
 rm -rf ./resources/filler_tester
 rm -rf ./resources/filler.trace
+rm -rf filler_tester.sh
