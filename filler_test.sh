@@ -38,37 +38,37 @@ cd resources
 ./filler_tester << EOF
 $PLAYER
 y
-2
+1
 y
-2
+1
 EOF
 ./filler_tester << EOF
 $PLAYER
 y
-2
+1
 y
-2
+1
 EOF
 ./filler_tester << EOF
 $PLAYER
 y
-2
+1
 y
-2
+1
 EOF
 ./filler_tester << EOF
 $PLAYER
 y
-2
+1
 y
-2
+1
 EOF
 ./filler_tester << EOF
 $PLAYER
 y
-2
+1
 y
-2
+1
 EOF
 rm -rf ./resources/players/"$PLAYER.filler"
 rm -rf ./resources/filler_tester
