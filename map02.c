@@ -73,7 +73,7 @@ void	map02p2(t_prm *prm, char player[21])
 			prm->fd = open("filler.trace", O_RDONLY);
 			read(prm->fd, prm->buf, 4096);
 			if (strstr(prm->buf, player) && !strstr(prm->buf, "Segfault"))
-				score++；
+				score++;
 			j++;
 		}
 		print_result(prm->player_lst[i], player, prm->nb2, score);
