@@ -45,7 +45,6 @@ void	map02p1(t_prm *prm, char player[21])
 			read(prm->fd, prm->buf, 4096);
 			if (strstr(prm->buf, player) && !strstr(prm->buf, "Segfault"))
 				score++;
-			printf("等待。。。\n");
 			j++;
 		}
 		print_result(player, prm->player_lst[i], prm->nb1, score);
