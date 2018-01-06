@@ -5,6 +5,9 @@ make -C /tmp/filler_tester
 git clone https://github.com/houtl/filler.git /tmp/filler_resources
 cp -R /tmp/filler_resources/resources .
 cp /tmp/filler_tester/filler_tester ./resources
+cp /tmp/filler_tester/filler_test00 ./resources
+cp /tmp/filler_tester/filler_test01 ./resources
+cp /tmp/filler_tester/filler_test02 ./resources
 rm -rf /tmp/filler_tester
 rm -rf /tmp/filler_resources
 red="\033[0;31m"
@@ -35,42 +38,45 @@ else
 	fi
 fi
 cd resources
-./filler_tester << EOF
+./filler_test00 << EOF
 $PLAYER
 y
-1
+500
 y
-1
+500
 EOF
-./filler_tester << EOF
+./filler_test01 << EOF
 $PLAYER
 y
-1
+100
 y
-1
+100
 EOF
-./filler_tester << EOF
+./filler_test02 << EOF
 $PLAYER
 y
-1
+2
 y
-1
+2
 EOF
-./filler_tester << EOF
+./filler_test02 << EOF
 $PLAYER
 y
-1
+2
 y
-1
+2
 EOF
-./filler_tester << EOF
+./filler_test02 << EOF
 $PLAYER
 y
-1
+2
 y
-1
+2
 EOF
 rm -rf ./resources/players/"$PLAYER.filler"
 rm -rf ./resources/filler_tester
+rm -rf ./resources/filler_test00
+rm -rf ./resources/filler_test01
+rm -rf ./resources/filler_test02
 rm -rf ./resources/filler.trace
 rm -rf filler_tester.sh
