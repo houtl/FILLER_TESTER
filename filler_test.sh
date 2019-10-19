@@ -48,30 +48,30 @@ EOF
 ./filler_test01 << EOF
 $PLAYER
 y
-5
+3
 y
-5
+3
 EOF
 ./filler_test02 << EOF
 $PLAYER
 y
-5
+3
 y
-5
+3
 EOF
 ./filler_test02 << EOF
 $PLAYER
 y
-5
+2
 y
-5
+2
 EOF
 ./filler_test02 << EOF
 $PLAYER
 y
-5
+2
 y
-5
+2
 EOF
 rm -rf ./resources/players/"$PLAYER.filler"
 rm -rf ./resources/filler_tester
